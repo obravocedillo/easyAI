@@ -38,11 +38,6 @@ class Human_Player:
                 move = possible_moves[int(move[6:])-1]
                 return move
 
-            elif str(move) in possible_moves_str:
-                # Transform the move into its real type (integer, etc. and return).
-                move = possible_moves[possible_moves_str.index(str(move))]
-                return move
-
 class AI_Player:
     """
     Class for an AI player. This class must be initialized with an
